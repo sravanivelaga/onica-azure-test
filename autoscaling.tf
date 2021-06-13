@@ -69,7 +69,7 @@ resource "azurerm_virtual_machine_scale_set" "azure" {
   }
 
   # required when using rolling upgrade policy
-  # health_probe_id = azurerm_lb_probe.azure.id
+  health_probe_id = azurerm_lb_probe.azure.id
 
   zones = var.zones
 
